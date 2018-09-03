@@ -1,6 +1,21 @@
 ﻿@{
     ViewBag.Title = "Sivu 1";
 }
+
+@section scripts {
+    <script type="text/javascript">
+        var globaaliArvo = 932;
+        //käytetään jQuerya, alustettu valmiiksi Shared/layout-sivulla
+        $(function () {
+            //sivun alustus
+
+            var lokaaliArvo = 123;
+            alert("Lokaali muuttuja = " + lokaaliArvo);
+            alert("Globaali muuttuja = " + globaaliArvo);
+        });
+    </script>
+    }
+
 <h1>Sivu 1</h1>
 
 @*linkki sivulle 2*@
