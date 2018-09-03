@@ -15,6 +15,16 @@
             var lokaaliArvo = 123;
             alert("Lokaali muuttuja = " + lokaaliArvo);
             alert("Globaali muuttuja = " + globaaliArvo);
+
+            //nappi-klikkauksen tapahtuman käsittelijä
+            //nappia klikatessa suoritetaan seuraava funktio
+            $("#nappi").click(function () {
+                globaaliArvo++; //kasvatetaan globaalimuuttujan arvoa 1:llä
+                //globaaliArvo++ on sama asia kuin globaaliArvo = globaaliArvo+1
+
+                //lisätään alert -->nähdään muutos ruudulla
+                alert("Globaali muuttuja on " + globaaliArvo);
+            });
         });
     </script>
     }
@@ -24,3 +34,5 @@
 @*linkki sivulle 2*@
 <a href="~/Home/Sivu2">Sivu 2</a>
 
+
+<button id="nappi">Kasvata arvoa</button>
