@@ -1,6 +1,32 @@
 ﻿@{
     ViewBag.Title = "Sivu 2";
 }
+@section scripts {
+
+    <script src="~/Scripts/Testi1.js"></script>
+    <script type="text/javascript">
+
+        //käytetään jQuerya, alustettu valmiiksi Shared/layout-sivulla
+        $(function () {
+            //sivun alustus
+
+            var lokaaliArvo = 123;
+            alert("Lokaali muuttuja = " + lokaaliArvo);
+            alert("Globaali muuttuja = " + globaaliArvo);
+
+            ////nappi-klikkauksen tapahtuman käsittelijä
+            ////nappia klikatessa suoritetaan seuraava funktio
+            //$("#nappi").click(function () {
+            //    globaaliArvo++; //kasvatetaan globaalimuuttujan arvoa 1:llä
+            //    //globaaliArvo++ on sama asia kuin globaaliArvo = globaaliArvo+1
+
+            //    //lisätään alert -->nähdään muutos ruudulla
+            //    alert("Globaali muuttuja on " + globaaliArvo);
+            //});
+        });
+    </script>
+}
+
 <h1>Sivu 2</h1>
 
 <a href="~/Home/Index">Sivu 1</a>
