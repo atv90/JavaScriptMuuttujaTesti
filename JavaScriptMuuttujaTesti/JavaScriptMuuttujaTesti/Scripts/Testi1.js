@@ -1,1 +1,1 @@
-﻿
+﻿var globaaliArvo = 932;
