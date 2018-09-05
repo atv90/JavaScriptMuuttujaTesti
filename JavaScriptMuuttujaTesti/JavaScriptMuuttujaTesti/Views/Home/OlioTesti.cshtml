@@ -9,8 +9,25 @@
         $(function () {
             //sivun alustus
 
+            var url = "http://md5.jsontest.com/?text=abcd";
+            $.get(url, null, function (data, textStatus) {
+                alert("Data = " + data + "\r\nStatus = " + textStatus);
+
+                alert("Data.md5 = " + data.md5);
+                alert("Data.original = " + data.original);
+
+            });
+
+            //var luetutTiedot =
+            //{
+                
+            //    "md5": "e2fc714c4727ee9395f324cd2e7f331f",
+            //        "original": "abcd"
+            //};
             
+
         });
+
     </script>
 }
 
