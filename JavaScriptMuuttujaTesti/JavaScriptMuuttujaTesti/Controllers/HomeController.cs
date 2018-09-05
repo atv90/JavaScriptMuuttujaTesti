@@ -16,6 +16,10 @@ namespace JavaScriptMuuttujaTesti.Controllers
         {
             return View();
         }
+        public ActionResult OlioTesti()
+        {
+            return View();
+        }
 
     }
 }
