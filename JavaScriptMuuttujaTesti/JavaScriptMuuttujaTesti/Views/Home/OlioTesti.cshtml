@@ -9,6 +9,12 @@
         $(function () {
             //sivun alustus
 
+            var url2 = " http://ip.jsontest.com/";
+            $.get(url2, null, function (data) {
+                alert("ip-osoite: " + data.url2);
+            });
+            
+
             var url = "http://md5.jsontest.com/?text=abcd";
             $.get(url, null, function (data, textStatus) {
                 alert("Data = " + data + "\r\nStatus = " + textStatus);
